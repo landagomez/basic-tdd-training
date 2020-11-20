@@ -16,7 +16,7 @@ class AccountUtilsTest {
 	}
 	
 	@Test
-	void passwordContains3ConsecutiveNumbersInLine() {
+	void passwordDoesNotContains3ConsecutiveNumbersInLine() {
 		Assert.assertFalse(AccountUtils.strengthCheck("A1231QazxsW2.*"));
 	}
 
